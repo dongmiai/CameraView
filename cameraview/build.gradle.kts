@@ -14,7 +14,7 @@ android {
         setMinSdkVersion(property("minSdkVersion") as Int)
         setTargetSdkVersion(property("targetSdkVersion") as Int)
         versionCode = 2
-        versionName = "2.6.5"
+        versionName = "2.6.4-patch_rotation"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         testInstrumentationRunnerArgument("filter", "" +
                 "com.otaliastudios.cameraview.tools.SdkExcludeFilter," +
