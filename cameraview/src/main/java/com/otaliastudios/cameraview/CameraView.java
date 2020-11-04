@@ -788,6 +788,8 @@ public class CameraView extends FrameLayout implements LifecycleObserver {
             mOrientationHelper.enable();
             mCameraEngine.getAngles().setDisplayOffset(mOrientationHelper.getLastDisplayOffset());
             mCameraEngine.start();
+            // fix camera takePhotos should rotate
+            mCameraCallbacks.onDeviceOrientationChanged(270);
         }
     }
 
